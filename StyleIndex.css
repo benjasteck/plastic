@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%) fixed;
+    animation: gradient 15s ease infinite;
+    color: #f6f6f6;
+    overflow-x: hidden;
+
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(29,108,19,0.8),rgba(102,102,102,0.01)), url("images/HeroIndex.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.blackFilter{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+.container{
+    padding: 50px 10%;
+
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 50px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+nav ul li{
+    margin: 10px 20px;
+    margin-right: 0;
+}
+nav ul li a{
+    color: #f6f6f6;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5bc86e;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul lan {
+padding-left: 10px;
+    padding-top: 8px;
+}
+nav ul lan a img{
+width: 28px;
+    height: 17px;
+    transition: 0.5s;
+}
+nav ul lan a img:hover{
+    transform: translateY(-5px);
+}
+.headerContent{
+  margin-top: 10%;  
+  display: flex;
+  align-items: center;
+}
+.header-text{
+}
+.header-text h2{
+    font-weight: bold;
+    
+    font-size: 20px;
+}
+.header-text h1{
+    font-size: 48px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.header-text p{
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #5bc86e;
+}
+.btn{
+    display: block;
+    margin-top: 50px;
+    width: fit-content;
+    border: 1px solid #5bc86e;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #5bc86e;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.6s;
+    
+}
+.btn:hover{
+    background: #5bc86e;
+    color: #f6f6f6;
+}
+
+.headerSlider{
+   
+    
+    margin-left: auto;
+}
+
+.kort > .image{
+    width: 50vmin;
+    height: 45vmin;
+    min-height: 400px;
+    min-width: 450px;
+    max-width: 500px;
+    max-height: 450px;
+    object-fit: cover;
+    object-position: 100% 50%;
+    box-shadow: rgba(129, 133, 137, 0.4) 0px 30px 90px;
+    
+
+}
+.kort{
+    clip-path: inset(0 0 3px);
+    position: relative;
+    border-radius: 20px;
+}
+
+.kortLayer{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.3) 20%, hsl(0 0% 0% / 1));
+    height: 300px;
+    width: 100%;
+    transform: translateY(58%);
+    transition: transform 0.5s ease;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+
+
+
+.kort:hover .kortLayer, .kort:focus-within .kortLayer{
+    transform: translateY(0);
+    transition-delay: 0.5s;
+
+}
+.kort:focus-within .kortLayer{
+    transition-duration: 0s;
+}
+
+.kortLayer > *:not(.cardTitle) {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+
+}
+.kort:hover .kortLayer > *:not(.cardTitle),
+.kort:focus-within .kortLayer > *:not(.cardTitle){
+
+    opacity: 1;
+    transition-delay: 1s;
+}
+.cardTitle{
+    position: relative;
+    width: max-content;
+    max-width: 100%;
+    padding-bottom: 4px;
+}
+.cardTitle::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+    width: calc(100% + var(--padding));
+    background: #5bc86e;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+.kort:hover .kortLayer::after,
+.kort:focus-within .kortLayer::after{
+    transform: scaleX(1);
+}
+.kort:hover .cardTitle::after,
+.kort:focus-within .cardTitle::after{
+    transform: scaleX(1);
+}
+.cardBody{
+    margin-top: 20px;
+}
+.idk{
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+.btnSlider{
+    margin: 0 auto;
+    margin-top: 15%;
+    width: 33%;
+    text-align: center;
+}
