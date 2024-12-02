@@ -1,3 +1,8 @@
+:root{
+    --minWidth: 1300px;
+    --width: 80%
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -31,8 +36,11 @@ body{
     z-index: -1;
 }
 .container{
-    padding: 50px 10%;
-
+    padding: 50px 0;
+    width: var(--width);
+    margin: 0 auto;
+    min-width: var(--minWidth);
+    
 
 }
 nav{
@@ -405,7 +413,8 @@ nav ul lan a img:hover{
     color: #f6f6f6;
 }
 .articleButtons{
-    width: 80%;
+    width: var(--width);
+    min-width: var(--minWidth);
     height: auto;
     margin: -50px auto;
     display: flex;
@@ -466,7 +475,8 @@ nav ul lan a img:hover{
 }
 .petitionSquare{
     position: relative;
-    width: 80%;
+    width: var(--width);
+    min-width: var(--minWidth);
     height: 400px;
     margin: 200px auto;
     margin-bottom: 80px;
@@ -512,7 +522,8 @@ nav ul lan a img:hover{
     right: 10px;
 }
 .greyBoxes{
-    width: 80%;
+    width: var(--width);
+    min-width: var(--minWidth);
     margin: 0px auto;
     
     height: 400px;
@@ -585,13 +596,15 @@ nav ul lan a img:hover{
 }
 .pin{
     position:absolute;
-    font-size: 40px;
+    font-size: 48px;
     transform: translate(-50%, -50%);
     cursor: pointer;
     color: #333332;
     transition: transform 0.3s ease;
     transition: color 0.3 ease;
+    
 }
+
 .pin:hover{
     transform: translate(-50%, -58%) scale(1.15);
     color: rgba(51, 51, 50, 0.8);
@@ -644,6 +657,7 @@ nav ul lan a img:hover{
     border-radius: 6px;
     text-decoration: none;
     color: #5bc86e;
+    font-weight: bold;
     background: #fff;
     transition: background 0.6s;
     
@@ -652,6 +666,97 @@ nav ul lan a img:hover{
     background: #5bc86e;
     color: #f6f6f6;
     
+}
+.stayInLoop{
+    width: var(--width);
+    min-width: var(--minWidth);
+    height: 550px;
+    margin: 80px auto;
+    
+}
+.stayInLoop h2{
+    font-size: 42px;
+    font-weight: bolder;
+    color: #333332;
+}
+.loopArticles{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.fullBtn{
+   width: 300px;
+    height: 475px;
+    background-color: #f6f6f6;
+    border-radius: 15PX; 
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.3s ease;
+}
+.fullBtn:hover{
+    background-color: #a0a0a0;
+}
+.button2{
+    position: absolute; /* Use absolute positioning inside the parent */
+    top: 0;
+    left: 0;
+    height: 400px;
+    transition: 0.3s;
+}
+.button2:hover{
+    transform: translateY(-10px);
+    background-size: 150%;
+    background-color: #939393;
+}
+#loop-button1{
+    background-image: url(images/plasticHeart.PNG);
+    background-size: cover;
+    background-position: center;
+}
+#loop-button2{
+    background-image: url(images/globePlastic.PNG);
+    background-size: cover;
+    background-position: center;
+}
+#loop-button3{
+    background-image: url(images/wavePlastic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#loop-button4{
+    background-image: url(images/tabPlastic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.loop-buttonText{
+    color: #333332;
+    margin-top: 20px;
+    
+    font-size: 20px;
+    font-weight: bolder;
+}
+.btnn2{
+    width: 70px;
+    height: 70px;
+    background-color: #5bc86e;
+    border-radius: 100px;
+    margin: 105% auto auto 72%;
+    text-align: center;
+    display: flex;              /* Enable flexbox */
+    justify-content: center;    /* Centers horizontally */
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btnn2:hover{
+    background-color: #ededeb;
+    color: #5bc86e;
+    border: 2px solid #5bc86e;
+}
+.btnn2 p{
+    padding: auto;
+    margin: 0;
+    cursor: pointer;
 }
 .idk{
     width: 2px;
