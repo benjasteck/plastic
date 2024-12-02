@@ -17,11 +17,10 @@
                 <img src="images/logo.png" class="logo">
         
                 <ul id="sidemenu">
-                    <li><a href="#header" id="headerHome">Home</a> </li>
-                    <li><a href="#about" id="headerAbout">About</a> </li>
-                    <li><a href="#services" id="headerPortfolio">Portfolio</a> </li>
-                    <li><a href="#portfolio" id="headerProject">Projects</a> </li>
-                    <li><a href="#contact" id="headerContact">Contact</a> </li>
+                    <li><a href="#header" id="headerHome">HOME</a> </li>
+                    <li><a href="#about" id="headerAbout">ARTICLES</a> </li>
+                    <li><a href="#services" id="headerPortfolio">TAKE ACTION</a> </li>
+                    <li><a href="#portfolio" id="headerProject">ABOUT US</a> </li>
                 </ul>
             </nav>
         <div class="headerContent">
@@ -32,23 +31,112 @@
                 <a href="" class="btn">Sign petition</a>
             </div>
             <div class="headerSlider">
-                <div class="kort" id="kort1">
-
-                    <img class="image" src="images/CongoPollution.png" draggable="false" onclick="expand(this.src)">
-                        <div class="kortLayer" id="kortLayer1">
-                            <h2 class="cardTitle" id="card1Title">People in the Congo struggles</h2>
-                            <p class="cardBody" id="card1Body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam 
-                            </p>
-                            <a href="#content" class="btn btnSlider" onclick="showNetflix()"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
+                <div id="slider">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+                    <div id="slides">
+                       <div id="overflow">
+                          <div class="inner">
+                             <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <div class="image2">
+                                        <h2>People in the Congo <br>struggles</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                        <a href="" class="btn2">Sign petition</a>
+                                    </div>
+                                   
+                                   
+                                </div>
+                             </div>
+                             <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <div class="image2">
+                                        <h2>People in the Congo <br>struggles</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                        <a href="" class="btn2">Sign petition</a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <div class="image2">
+                                        <h2>People in the Congo <br>struggles</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                        <a href="" class="btn2">Sign petition</a>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <div class="image2">
+                                        <h2>People in the Congo <br>struggles</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                        <a href="" class="btn2">Sign petition</a>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
                     </div>
+                    
+                    <div id="bullets">
+                       <label for="slide1"></label>
+                       <label for="slide2"></label>
+                       <label for="slide3"></label>
+                       <label for="slide4"></label>
+                    </div>
+                 </div>
+                </div>
             </div>
-        </div>
         </div>
         </div>
 
         <div class="idk">
             <p>u gay lol</p>
         </div>
+        
 </body>
 </html>
+<script>
+   let currentSlide = 0;
+let isManualChange = false; // Flag to track manual changes
+const slides = document.querySelectorAll('input[name="slider"]');
+
+// Function to change the slide
+function changeSlide() {
+    if (isManualChange) return; // If manual change happened, don't auto change
+
+    // Uncheck the current radio button
+    slides[currentSlide].checked = false;
+
+    // Move to the next slide
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    // Check the next radio button
+    slides[currentSlide].checked = true;
+}
+
+// Change slide every 10 seconds (10000 milliseconds)
+const slideInterval = setInterval(changeSlide, 10000);
+
+// Listen for manual changes to radio buttons
+slides.forEach((slide, index) => {
+    slide.addEventListener('change', () => {
+        // When the user manually selects a radio button
+        isManualChange = true;
+        currentSlide = index; // Update the current slide to the manually selected one
+
+        // Clear the automatic slide interval when the user manually selects a radio button
+        clearInterval(slideInterval);
+
+        // Optionally, restart the automatic slide after some delay if desired
+        // For example, restart the interval after 5 seconds if no other manual change happens:
+        setTimeout(() => {
+            isManualChange = false; // Resume automatic cycling
+            setInterval(changeSlide, 10000); // Restart the slide interval
+        }, 5000);
+    });
+});
+</script>
