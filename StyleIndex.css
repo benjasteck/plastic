@@ -473,6 +473,7 @@ nav ul lan a img:hover{
     background: #5bc86e;
     border-radius: 15px;
     padding-top: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .petitionSquare h2{
    margin-top: 0px; 
@@ -514,7 +515,7 @@ nav ul lan a img:hover{
     width: 80%;
     margin: 0px auto;
     
-    height: 200px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
 }
@@ -525,6 +526,7 @@ nav ul lan a img:hover{
     border-radius: 15px;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .greyBox h2{
     margin-top: 20px; 
@@ -561,6 +563,19 @@ nav ul lan a img:hover{
 .btn4:hover{
     background: #5bc86e;
     color: #f6f6f6;
+    
+}
+.map{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0, 255, 9, 0.2),rgba(0, 255, 9, 0.2)), url(images/Map.png);
+    margin-top: 80px;
+    background-size: cover;
+    background-position: center;
+}
+.idk{
+    width: 2px;
+    height: 300px;
 }
  @media screen and (max-width: 900px) {
     #slide1:checked ~ #controls label:nth-child(2),
