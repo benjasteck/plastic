@@ -397,7 +397,7 @@ nav ul lan a img:hover{
 }
 .articleButtons{
     width: 80%;
-    height: 100px;
+    height: auto;
     margin: -50px auto;
     display: flex;
     justify-content: space-between;
@@ -454,6 +454,51 @@ nav ul lan a img:hover{
     text-align: center;
     font-size: 20px;
     font-weight: bolder;
+}
+.petitionSquare{
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: 200px auto;
+    background: #5bc86e;
+    border-radius: 15px;
+    padding-top: 20px;
+}
+.petitionSquare h2{
+   margin-top: 0px; 
+   margin-left: 20px;
+   font-size: 36px;
+   font-weight: bolder;
+}
+.petitionSquare p{
+    margin-top: 20px; 
+   margin-left: 20px;
+   font-size: 18px;
+   font-weight: bold;
+}
+.btn3{
+    display: block;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333332;
+    background: #fff;
+    transition: background 0.6s;
+    
+}
+.btn3:hover{
+    background: #939393;
+    color: #f6f6f6;
+}
+.petitionSquare img{
+    position:absolute;
+    height: 95%;
+    width: auto;
+    bottom: 10px;
+    right: 10px;
 }
  @media screen and (max-width: 900px) {
     #slide1:checked ~ #controls label:nth-child(2),
