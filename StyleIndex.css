@@ -579,7 +579,7 @@ nav ul lan a img:hover{
     top: 0;
     left: 0;
     right: 0;
-    bottom: 10px;
+    bottom: 5px;
     background-color: rgba(0, 255, 9, 0.2);
     pointer-events: none;
 }
