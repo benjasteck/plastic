@@ -288,6 +288,15 @@ nav ul lan a img:hover{
     z-index: 2;
     text-align: left;
  }
+ #image2{
+    background-image: linear-gradient(rgba(29,0,19,0.1),rgba(0, 0, 0, 0.8)), url(images/oceanPlastic.jpg);
+ }
+ #image3{
+    background-image: linear-gradient(rgba(29,0,19,0.1),rgba(0, 0, 0, 0.8)), url(images/riverPlastic.jpg);
+ }
+ #image4{
+    background-image: linear-gradient(rgba(29,0,19,0.1),rgba(0, 0, 0, 0.8)), url(images/Fishorplastic.jpg);
+ }
  .image2 h2{
     position: absolute;
     width: max-content;
@@ -310,7 +319,7 @@ nav ul lan a img:hover{
     background: #00171F;
  }
  #slides .slide_2 {
-    background: #003459;
+    background-image: url(images/oceanPlastic.jpg);
  }
  #slides .slide_3 {
     background: #007EA7;
@@ -460,6 +469,7 @@ nav ul lan a img:hover{
     width: 80%;
     height: 400px;
     margin: 200px auto;
+    margin-bottom: 80px;
     background: #5bc86e;
     border-radius: 15px;
     padding-top: 20px;
@@ -499,6 +509,58 @@ nav ul lan a img:hover{
     width: auto;
     bottom: 10px;
     right: 10px;
+}
+.greyBoxes{
+    width: 80%;
+    margin: 0px auto;
+    
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.greyBox{
+    height: 400px;
+    width: 600px;
+    background-color: #939393;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.greyBox h2{
+    margin-top: 20px; 
+   margin-left: 20px;
+   font-size: 36px;
+   font-weight: bolder;
+}
+.greyBox ul{
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.greyBox ul li{
+   font-size: 18px;
+   font-weight: bold;
+   margin-top: 10px;
+}
+.btn4{
+    display: block;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 20px;
+    left: 20px;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 2px solid #5bc86e;
+    color: #5bc86e;
+    background: #fff;
+    transition: background 0.6s;
+    
+}
+.btn4:hover{
+    background: #5bc86e;
+    color: #f6f6f6;
 }
  @media screen and (max-width: 900px) {
     #slide1:checked ~ #controls label:nth-child(2),

@@ -52,8 +52,8 @@
                              </div>
                              <div class="slide slide_2">
                                 <div class="slide-content">
-                                    <div class="image2">
-                                        <h2>People in the Congo <br>struggles</h2>
+                                    <div class="image2" id="image2">
+                                        <h2>Is it a fish? Is it a turtle? <br>No! its a plastic bag..</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                         <a href="" class="btn2">Sign petition</a>
                                     </div>
@@ -61,8 +61,8 @@
                              </div>
                              <div class="slide slide_3">
                                 <div class="slide-content">
-                                    <div class="image2">
-                                        <h2>People in the Congo <br>struggles</h2>
+                                    <div class="image2" id="image3">
+                                        <h2>The highway of plastic straight <br>into the ocean</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                         <a href="" class="btn2">Sign petition</a>
                                     </div>
@@ -70,8 +70,8 @@
                              </div>
                              <div class="slide slide_4">
                                 <div class="slide-content">
-                                    <div class="image2">
-                                        <h2>People in the Congo <br>struggles</h2>
+                                    <div class="image2" id="image4">
+                                        <h2>Fish or plastic <br>How fish are contaminated</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                         <a href="" class="btn2">Sign petition</a>
                                     </div>
@@ -128,12 +128,32 @@
             <img src="images/66d680b51119937aa2093c54_baby_child_adults.svg" alt="">
         </div>
         
+        <div class="greyBoxes">
+            <div class="greyBox">
+                <h2>We need an ambitious and <br>dynamic treaty!</h2>
+                <ul>
+                    <li>Every man shall be entitled to a litre of beer and vodka, hourly to ensure his or hers survival.</li>
+                    <li>Taxes shall be made illegal and any politician caught even thinking about it shall be publically cut bald in an act of public humiliation</li>
+                    <li>Mette frederiksen shall be forced into the mink business and she will sta there till they forgiv her(itll never happen)</li>
+                </ul>
+                <a href="" class="btn4">Sign petition</a>
+            </div>
+            <div class="greyBox">
+                <h2>There are only two things we need in this treaty to deliver this!</h2>
+                <ul>
+                    <li>Money and guns</li>
+                    <li>Drunk teenagers</li>
+                </ul>
+                <a href="" class="btn4">Sign petition</a>
+            </div>
+        </div>
         
 </body>
 </html>
 <script>
    let currentSlide = 0;
 let isManualChange = false; // Flag to track manual changes
+let slideInterval; // To store the interval ID
 const slides = document.querySelectorAll('input[name="slider"]');
 
 // Function to change the slide
@@ -151,7 +171,16 @@ function changeSlide() {
 }
 
 // Change slide every 10 seconds (10000 milliseconds)
-const slideInterval = setInterval(changeSlide, 10000);
+function startSlideInterval() {
+    // Clear any existing interval
+    clearInterval(slideInterval);
+
+    // Start a new interval
+    slideInterval = setInterval(changeSlide, 10000);
+}
+
+// Initially start the automatic slide change
+startSlideInterval();
 
 // Listen for manual changes to radio buttons
 slides.forEach((slide, index) => {
@@ -164,11 +193,10 @@ slides.forEach((slide, index) => {
         clearInterval(slideInterval);
 
         // Optionally, restart the automatic slide after some delay if desired
-        // For example, restart the interval after 5 seconds if no other manual change happens:
         setTimeout(() => {
             isManualChange = false; // Resume automatic cycling
-            setInterval(changeSlide, 10000); // Restart the slide interval
-        }, 5000);
+            startSlideInterval(); // Restart the slide interval
+        }, 5000); // Restart the interval after 5 seconds if no other manual change happens
     });
 });
 </script>
