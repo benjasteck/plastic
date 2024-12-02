@@ -554,7 +554,6 @@ nav ul lan a img:hover{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    border: 2px solid #5bc86e;
     color: #5bc86e;
     background: #fff;
     transition: background 0.6s;
@@ -565,13 +564,94 @@ nav ul lan a img:hover{
     color: #f6f6f6;
     
 }
+.map-container{
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
 .map{
     width: 100%;
-    height: 700px;
-    background-image: linear-gradient(rgba(0, 255, 9, 0.2),rgba(0, 255, 9, 0.2)), url(images/Map.png);
-    margin-top: 80px;
-    background-size: cover;
-    background-position: center;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    background-color: rgba(0, 255, 9, 0.2);
+    pointer-events: none;
+}
+.pin{
+    position:absolute;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #333332;
+    transition: transform 0.3s ease;
+    transition: color 0.3 ease;
+}
+.pin:hover{
+    transform: translate(-50%, -58%) scale(1.15);
+    color: rgba(51, 51, 50, 0.8);
+}
+.pin.pin1{
+    left: 69%;
+    top: 48%;
+}
+.pin.pin2{
+    left: 46%;
+    top: 34%;
+}
+.pin.pin3{
+    left: 54%;
+    top: 68%;
+}
+.pin.pin4{
+    left: 76.5%;
+    top: 53%;
+}
+.pin.pin5{
+    left: 83%;
+    top: 55%;
+}
+.pin.pin6{
+    left: 81%;
+    top: 36%;
+}
+.mapTitle{
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    z-index: 3;
+    font-size: 42px;
+    font-weight: bolder;
+}
+.mapText{
+    position: absolute;
+    top: 140px;
+    left: 10%;
+    font-size: 16px;
+}
+.btn5{
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #5bc86e;
+    background: #fff;
+    transition: background 0.6s;
+    
+}
+.btn5:hover{
+    background: #5bc86e;
+    color: #f6f6f6;
+    
 }
 .idk{
     width: 2px;
