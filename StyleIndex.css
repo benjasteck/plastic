@@ -13,13 +13,24 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(233, 233, 233) 0%, rgb(246, 246, 246) 99.4%) fixed;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(255, 255, 255) 0%, rgb(246, 246, 246) 99.4%) fixed;
     animation: gradient 15s ease infinite;
     color: #f6f6f6;
     overflow-x: hidden;
 
 }
-
+.donut{
+    position: absolute;
+    z-index: -1;
+    right: -25%;
+    margin-top: -5%;
+}
+.donut2{
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    margin-top: -25%;
+}
 #header{
     width: 100%;
     height: 100vh;
