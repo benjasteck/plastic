@@ -1,0 +1,339 @@
+:root{
+    --minWidth: 1300px;
+    --width: 80%
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(255, 255, 255) 0%, rgb(246, 246, 246) 99.4%) fixed;
+    animation: gradient 15s ease infinite;
+    color: #f6f6f6;
+    overflow-x: hidden;
+
+}
+.donut{
+    position: absolute;
+    z-index: -1;
+    right: -25%;
+    margin-top: -5%;
+    width: 100%;
+    max-height: 1600px;
+}
+.donut2{
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    margin-top: -25%;
+    width: 85%;
+    max-height: 1600px;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(29,108,19,0.8),rgba(102,102,102,0.01)), url("images/un.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.blackFilter{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+.container{
+    padding: 50px 0;
+    width: var(--width);
+    margin: 0 auto;
+    min-width: var(--minWidth);
+    
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 50px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+nav ul li{
+    margin: 10px 20px;
+    margin-right: 0;
+}
+nav ul li a{
+    color: #f6f6f6;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5bc86e;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul lan {
+padding-left: 10px;
+    padding-top: 8px;
+}
+nav ul lan a img{
+width: 28px;
+    height: 17px;
+    transition: 0.5s;
+}
+nav ul lan a img:hover{
+    transform: translateY(-5px);
+}
+.headerContent{
+  margin-top: 10%;  
+  display: flex;
+  align-items: center;
+}
+.header-text{
+}
+.header-text h2{
+    font-weight: bold;
+    
+    font-size: 20px;
+}
+.header-text h1{
+    font-size: 48px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.header-text p{
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #5bc86e;
+}
+.btn{
+    display: block;
+    margin-top: 50px;
+    width: fit-content;
+    border: 2px solid #5bc86e;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #5bc86e;
+    background: #f6f6f6;
+    transition: background 0.6s;
+}
+.btn:hover{
+    background: #5bc86e;
+    color: #f6f6f6;
+}
+
+
+ .btn2{
+    position: absolute;
+    display: block;
+    top: 85%; /* Position 85% from the top */
+    left: 50%; /* Position 50% from the left */
+    transform: translateX(-50%);
+    width: fit-content;
+    border: 1px solid #5bc86e;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #5bc86e;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.6s;
+    
+}
+
+.navIcons{
+    margin: 50px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 200px;
+    background-color: #ededeb;
+    box-shadow: rgba(129, 133, 137, 0.4) 0px 15px 15px;
+}
+.navContainer{
+    width: var(--width);
+    min-width: var(--minWidth);
+    height: 100%;
+    margin: auto auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+}
+.icon img{
+width: 90%;
+height: 90%;
+object-fit: contain;
+margin: 5%;
+cursor: pointer;
+transition: 0.3s;
+}
+.icon img:hover{
+    transform: scale(1.1);
+}
+.icon p{
+    color: #333332;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.grid-container {
+    display: grid; /* Activate CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns, each with equal width */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows, each with equal height */
+    width: var(--width); /* Make the grid take up the full width */
+    min-width: var(--minWidth);
+    height: 1350px; /* Set the height of the grid container */
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.grid-item {
+    background-color: #ededeb;
+    
+}
+.grid-item img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+#grid1{
+    border-radius: 15px 0 0 0;
+}
+#grid1 img{
+    border-radius: 15px 0 0 0;
+}
+#grid2{
+    border-radius: 0 15px 0 0;
+    display: flex;
+}
+#grid3{
+    display: flex;
+}
+#grid5{
+    border-radius: 0 0 0 15px;
+}
+#grid5 img{
+    border-radius: 0 0 0 15px;
+}
+#grid6{
+    border-radius: 0 0 15px 0;
+    display: flex;
+}
+.gridContent{
+    margin: auto auto;
+    width: 80%;
+    height: fit-content;
+}
+.gridContent h3{
+font-size: 16px;
+font-weight: bold;
+color: #333332;
+padding-left: 10px;
+border-left: 3px solid #5bc86e;
+}
+.gridContent h2{
+font-size: 36px;
+font-weight: bolder;
+color: #5bc86e;
+margin: 10px 0;
+}
+.gridContent p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #333332;
+}
+
+.subTitle{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-top: 40px;
+    color: #333332;
+}
+.sub2{
+    margin-top: 20px;
+}
+.latestNews{
+    width: var(--width);
+    min-width: var(--minWidth);
+    height: 500px;
+    margin: 0 auto;
+}
+.latestNews h2{
+    color: #333332;
+    border-bottom: 3px solid #5bc86e;
+    padding: 5px 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+.latestNews p{
+    color: #333332;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.news{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+.newsText{
+    height: 100%;
+    width: 800px;
+    
+    padding: 20px;
+}
+.news img{
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.newsText h3{
+    color: #5bc86e;
+}
+.newsText h2{
+    border: none;
+}
+#newsP1{
+    margin: 0px 0 5px;
+    font-weight: bold;
+}
+#newsP2{
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+}
