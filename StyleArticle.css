@@ -145,7 +145,7 @@ nav ul lan a img:hover{
 }
 .btn{
     display: block;
-    margin-top: 50px;
+    margin-top: 40px;
     width: fit-content;
     border: 2px solid #5bc86e;
     padding: 14px 50px;
@@ -160,13 +160,7 @@ nav ul lan a img:hover{
     background: #5bc86e;
     color: #f6f6f6;
 }
-.articleSpace{
-    width: var(--width);
-    min-width: var(--minWidth);
-    height: 500px;
-    background-color: #fff;
-    margin: 100px auto;
-}
+
 
 .stayInLoop{
     width: var(--width);
@@ -267,9 +261,9 @@ nav ul lan a img:hover{
     min-width: var(--minWidth);
     margin: 0 auto;
     height: 200px;
-    border: 1px solid #333332;
+    
     border-radius: 15px;
-    background: linear-gradient(90deg, transparent 20%, #5bc86e);
+    background: #5bc86e;
 }
 .newsTitle{
     font-size: 42px;
@@ -286,11 +280,188 @@ nav ul lan a img:hover{
     padding-top: 10px;
     margin-bottom: 20px;
 }
+.articleSpace{
+    display: flex;
+    flex-direction: column;
+    width: var(--width);
+    min-width: var(--minWidth);
+    height: fit-content;
+    background-color: #fff;
+    margin: 100px auto;
+}
 .titleContent{
-    background-color: red;
+    width: 90%;
+    height: fit-content;
+    margin: 30px auto;
+}
+.titleContent img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.titleContent h2{
+    color: #5bc86e;
+}
+.titleContent h1{
+    color: #333332;
+}
+.namePart{
+display: flex;
+border-bottom: 2px solid #5bc86e;
+height: 87px;
+}
+.namePart img{
+    margin: auto 0;
+}
+.frNamePart{
+    color: #939393;
+    margin: auto 20px;
+}
+.frNamePart p{
+    padding: 5px 0;
+}
+.articlePart{
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto 30px;
+}
+.articlePart p{
+    color: #333332;
+    font-weight: bold;
+}
+.girlProImg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 10px 0 5px;
+}
+figcaption{
+    color: #939393;
+}
+.sideText{
+    width: 100%;
+    height: 200px;
+    color: #333332;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.sideText p{
+    width: 47.5%;
+    
+}
+.grid-container {
+    display: grid; /* Activate CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns, each with equal width */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows, each with equal height */
+    width: 100%; /* Make the grid take up the full width */
+    height: 1050px; /* Set the height of the grid container */
+}
+
+.grid-item {
+    background-color: #ededeb;
+    
+}
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#grid1{
+    border-radius: 15px 0 0 0;
+}
+#grid1 img{
+    border-radius: 15px 0 0 0;
+}
+#grid2{
+    border-radius: 0 15px 0 0;
+    display: flex;
+}
+#grid3{
+    display: flex;
+}
+#grid5{
+    border-radius: 0 0 0 15px;
+}
+#grid5 img{
+    border-radius: 0 0 0 15px;
+}
+#grid6{
+    border-radius: 0 0 15px 0;
+    display: flex;
+}
+.gridContent{
+    margin: auto auto;
     width: 80%;
-    height: 100px;
-    margin: 50px auto;
+    height: 80%;
+}
+.gridContent h3{
+font-size: 16px;
+font-weight: bold;
+color: #333332;
+padding-left: 10px;
+border-left: 2px solid #5bc86e;
+}
+.gridContent h2{
+font-size: 36px;
+font-weight: bolder;
+color: #5bc86e;
+margin: 10px 0;
+}
+.gridContent p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.subTitle{
+    font-size: 32px;
+    font-weight: bolder;
+    margin-top: 40px;
+    color: #333332;
+}
+.sub2{
+    margin-top: 20px;
+}
+.figureContainer{
+display: flex;
+width: 100%;
+height: fit-content;
+justify-content: space-between;
+margin-top: 20px;
+}
+.figure1{
+    width: 375px;
+    
+}
+.figure1 img{
+    width: 375px;
+    height: 375px;
+    border: 1px solid #333332;
+    border-radius: 15px;
+    padding: 5px;
+}
+.figure1 h3{
+    color: #333332;
+    margin-top: 20px;
+}
+.figure1 p{
+    margin-top: 5px;
+    font-weight: normal;
+}
+.endTitle{
+    color: #333332;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.endList li{
+    color: #333332;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.finish{
+    color: #939393;
+    margin-top: 40px;
 }
 .footer{
     background-color: #5bc86e;
@@ -377,3 +548,23 @@ nav ul lan a img:hover{
   .languages img:hover{
     transform: translateY(-5px);
   }
+  .btn4{
+    display: block;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 20px;
+    left: 20px;
+    width: fit-content;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #5bc86e;
+    background: #fff;
+    transition: background 0.6s;
+    
+}
+.btn4:hover{
+    background: #5bc86e;
+    color: #f6f6f6;
+    
+}
