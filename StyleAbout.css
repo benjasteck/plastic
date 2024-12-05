@@ -627,6 +627,7 @@ margin: 10px 0;
     background: #fff;
     transition: background 0.6s;
     border: 2px solid #5bc86e;
+    font-size: 16px;
     
 }
 .btn4:hover{
