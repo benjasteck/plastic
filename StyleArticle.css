@@ -283,7 +283,7 @@ nav ul lan a img:hover{
 .articleSpace{
     display: flex;
     flex-direction: column;
-    width: var(--width);
+    width: var(--minWidth);
     min-width: var(--minWidth);
     height: fit-content;
     background-color: #fff;
