@@ -19,10 +19,10 @@
                 <img src="images/logo.png" class="logo">
         
                 <ul id="sidemenu">
-                    <li><a href="#header" id="headerHome">HOME</a> </li>
-                    <li><a href="#about" id="headerAbout">ARTICLES</a> </li>
+                    <li><a href="index.html" id="headerHome">HOME</a> </li>
+                    <li><a href="article.html" id="headerAbout">ARTICLES</a> </li>
                     <li><a href="#services" id="headerPortfolio">TAKE ACTION</a> </li>
-                    <li><a href="#portfolio" id="headerProject">ABOUT US</a> </li>
+                    <li><a href="About.html" id="headerProject">ABOUT US</a> </li>
                 </ul>
             </nav>
         <div class="headerContent">
@@ -128,7 +128,7 @@
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
-            <a href="" class="btn">See more research</a>
+            <a href="article.html" class="btn">See more research</a>
             <h3 class="endTitle">How you can help combat it</h2>
             <ul class="endList">
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
@@ -146,40 +146,54 @@
         <h2 class="loopTitle">Stay In The Loop</h2>
         <div class="loopArticles">
             <div class="fullBtn">
-                <div class="button2" id="loop-button1" aria-label="Plastic looking like a red human heart">  
+
+                <div class="button2" id="loop-button1" aria-label="Plastic looking like a red human heart"></div>>
+                    <a href="article.html" class="btnLink">
                     <div class="btnn2">
                         <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
                     </div>
+                </a>
                     <div class="loop-buttonText">
                         <p>Your heart high on plastic. diseases and health risks</p>
                     </div>
                 </div>    
             </div>
             <div class="fullBtn">
-            <div class="button2" id="loop-button2" aria-label="Globe in a plastic bag filled with water held by a human hand">
+
+            <div class="button2" id="loop-button2" aria-label="Globe in a plastic bag filled with water held by a human hand"></div>>
+                <a href="article.html" class="btnLink">
+
                 <div class="btnn2">
                     <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
                 </div>
+            </a>
                 <div class="loop-buttonText">
                     <p>The world, our biggest trash dump idk example text</p>
                 </div>
             </div>
             </div>
             <div class="fullBtn">
+
             <div class="button2" id="loop-button3" aria-label="An artistic depiction of a large wave, inspired by Hokusai's 'The Great Wave off Kanagawa,' made up of various pieces of plastic waste, highlighting plastic pollution. In the background, Mount Fuji visible under a clear blue sky">
+                <a href="article.html" class="btnLink">
+
                 <div class="btnn2">
                     <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
                 </div>
+            </a>
                 <div class="loop-buttonText">
                     <p>Stuff about oceans and micro plastics, plastic in yo fish wow</p>
                 </div>
             </div>
             </div>
             <div class="fullBtn">
+
             <div class="button2" id="loop-button4" aria-label="A public art installation featuring a giant tap pouring out a cascade of plastic bottles and waste, symbolizing plastic pollution. The backdrop includes a modern glass building, flags, and pedestrians, creating a contrast between urban development and environmental concerns">
+                <a href="article.html" class="btnLink">
                 <div class="btnn2">
                     <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
                 </div>
+            </a>
                 <div class="loop-buttonText">
                     <p>plastic in yo water plastic in yo blood plastic in yo children plastic in yo food</p>
                 </div>
@@ -208,9 +222,9 @@
                   </a>
               </div>
               <div class="nav-links">
-                  <a href="index.html">Articles</a>
+                  <a href="article.html">Articles</a>
                   <a href="subpage.html">Take Action</a>
-                  <a href="about.html">About Us</a>
+                  <a href="About.html">About Us</a>
               </div>
               <div class="separatingLine"></div>
   
@@ -229,3 +243,127 @@
       </footer>
 </body>
 </html>
+<script>
+    
+// Target the grid items
+const grid1 = document.getElementById('grid1');
+const grid2 = document.getElementById('grid2');
+const grid3 = document.getElementById('grid3');
+const grid4 = document.getElementById('grid4');
+const grid5 = document.getElementById('grid5');
+const grid6 = document.getElementById('grid6');
+
+// Target the images inside grid1 and grid4
+const img1 = grid1.querySelector('img');
+const img4 = grid4.querySelector('img');
+const img5 = grid5.querySelector('img');
+
+const grid3Content = grid3.querySelector('.gridContent');
+const grid3H3 = grid3Content.querySelector('h3');
+const grid3H2 = grid3Content.querySelector('h2');
+const grid3P = grid3Content.querySelector('p');
+
+// Add hover effects for grid1 and grid2
+grid1.addEventListener('mouseenter', () => {
+    grid1.style.backgroundColor = '#5bc86e';
+    grid2.style.backgroundColor = '#5bc86e';
+    img1.style.transform = 'scale(1.05)';
+    img1.style.transition = 'transform 0.3s ease';
+});
+grid1.addEventListener('mouseleave', () => {
+    grid1.style.backgroundColor = '';
+    grid2.style.backgroundColor = '';
+    img1.style.transform = '';
+});
+
+// Add hover effects for grid2
+grid2.addEventListener('mouseenter', () => {
+    grid2.style.backgroundColor = '#5bc86e';
+    img1.style.transform = 'scale(1.05)';
+    img1.style.transition = 'transform 0.3s ease';
+});
+grid2.addEventListener('mouseleave', () => {
+    grid2.style.backgroundColor = '';
+    img1.style.transform = '';
+});
+
+// Add hover effects for grid3 and grid4
+grid3.addEventListener('mouseenter', () => {
+    grid3.style.backgroundColor = '#5bc86e';
+    grid4.style.backgroundColor = '#5bc86e';
+    img4.style.transform = 'scale(1.05)';
+    img4.style.transition = 'transform 0.3s ease';
+});
+grid3.addEventListener('mouseleave', () => {
+    grid3.style.backgroundColor = '';
+    grid4.style.backgroundColor = '';
+    img4.style.transform = '';
+});
+
+// Add hover effects for grid4
+grid4.addEventListener('mouseenter', () => {
+    grid4.style.backgroundColor = '#5bc86e';
+    grid3.style.backgroundColor = '#5bc86e';
+    img4.style.transform = 'scale(1.05)';
+    img4.style.transition = 'transform 0.3s ease';
+});
+grid4.addEventListener('mouseleave', () => {
+    grid4.style.backgroundColor = '';
+    grid3.style.backgroundColor = '';
+    img4.style.transform = '';
+});
+grid4.addEventListener('mouseenter', () => {
+    // Set color when hovering over grid4
+    grid3H3.style.color = '#f6f6f6';
+    grid3H2.style.color = '#333332';
+    grid3P.style.color = '#f6f6f6';
+    grid3H3.style.borderLeft = '2px solid #333332';
+});
+
+grid4.addEventListener('mouseleave', () => {
+    // Reset color when mouse leaves grid4
+    grid3H3.style.color = '';
+    grid3H2.style.color = '';
+    grid3P.style.color = '';
+    grid3H3.style.borderLeft = '';
+});
+
+grid3.addEventListener('mouseenter', () => {
+    // Set color when hovering over grid3
+    grid3H3.style.color = '#f6f6f6';
+    grid3H2.style.color = '#333332';
+    grid3P.style.color = '#f6f6f6';
+    grid3H3.style.borderLeft = '2px solid #333332';
+});
+
+grid3.addEventListener('mouseleave', () => {
+    // Reset color when mouse leaves grid3
+    grid3H3.style.color = '';
+    grid3H2.style.color = '';
+    grid3P.style.color = '';
+    grid3H3.style.borderLeft = '';
+});
+
+grid5.addEventListener('mouseenter', () => {
+    grid5.style.backgroundColor = '#5bc86e';
+    grid6.style.backgroundColor = '#5bc86e';
+    img5.style.transform = 'scale(1.05)';
+    img5.style.transition = 'transform 0.3s ease';
+});
+grid5.addEventListener('mouseleave', () => {
+    grid5.style.backgroundColor = '';
+    grid6.style.backgroundColor = '';
+    img5.style.transform = '';
+});
+
+// Add hover effects for grid2
+grid6.addEventListener('mouseenter', () => {
+    grid6.style.backgroundColor = '#5bc86e';
+    img5.style.transform = 'scale(1.05)';
+    img5.style.transition = 'transform 0.3s ease';
+});
+grid6.addEventListener('mouseleave', () => {
+    grid6.style.backgroundColor = '';
+    img5.style.transform = '';
+});
+</script>

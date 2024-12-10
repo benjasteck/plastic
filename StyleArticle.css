@@ -233,6 +233,10 @@ nav ul lan a img:hover{
     font-size: 20px;
     font-weight: bolder;
 }
+.btnLink{
+    color: #f6f6f6;
+    cursor: default;
+}
 .btnn2{
     width: 70px;
     height: 70px;
@@ -261,9 +265,9 @@ nav ul lan a img:hover{
     min-width: var(--minWidth);
     margin: 0 auto;
     height: 200px;
-    
     border-radius: 15px;
-    background: #5bc86e;
+    background: linear-gradient(90deg, transparent 15%, #5bc86e);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .newsTitle{
     font-size: 42px;
@@ -289,6 +293,68 @@ nav ul lan a img:hover{
     background-color: #fff;
     margin: 100px auto;
 }
+
+
+/* Change font color of specific elements inside #grid2 */
+#grid1:hover ~ #grid2 .gridContent h3,
+#grid1:hover ~ #grid2 .gridContent h2,
+#grid1:hover ~ #grid2 .gridContent p,
+#grid2:hover .gridContent h3,
+#grid2:hover .gridContent h2,
+#grid2:hover .gridContent p {
+    color: #f6f6f6;
+}
+#grid1:hover ~ #grid2 .gridContent h3,
+#grid2:hover .gridContent h3 {
+    border-left: 2px solid #333332;
+}
+#grid1:hover ~ #grid2 .gridContent h2,
+#grid2:hover .gridContent h2{
+    color: #333332;
+}
+
+
+
+
+
+
+/* Change font color of specific elements inside #grid2 */
+#grid4:hover ~ #grid3 .gridContent h3,
+#grid4:hover ~ #grid3 .gridContent h2,
+#grid4:hover ~ #grid3 .gridContent p,
+#grid3:hover .gridContent h3,
+#grid3:hover .gridContent h2,
+#grid3:hover .gridContent p {
+    color: #f6f6f6;
+}
+#grid4:hover ~ #grid3 .gridContent h3,
+#grid3:hover .gridContent h3 {
+    border-left: 2px solid #333332;
+}
+#grid4:hover ~ #grid3 .gridContent h2,
+#grid3:hover .gridContent h2{
+    color: #333332;
+}
+
+#grid5:hover ~ #grid6 .gridContent h3,
+#grid5:hover ~ #grid6 .gridContent h2,
+#grid5:hover ~ #grid6 .gridContent p,
+#grid6:hover .gridContent h3,
+#grid6:hover .gridContent h2,
+#grid6:hover .gridContent p {
+    color: #f6f6f6;
+}
+#grid5:hover ~ #grid6 .gridContent h3,
+#grid6:hover .gridContent h3 {
+    border-left: 2px solid #333332;
+}
+#grid5:hover ~ #grid6 .gridContent h2,
+#grid6:hover .gridContent h2{
+    color: #333332;
+}
+
+
+
 .titleContent{
     width: 90%;
     height: fit-content;
@@ -370,6 +436,7 @@ figcaption{
 }
 #grid1{
     border-radius: 15px 0 0 0;
+    overflow: hidden;
 }
 #grid1 img{
     border-radius: 15px 0 0 0;
@@ -377,12 +444,17 @@ figcaption{
 #grid2{
     border-radius: 0 15px 0 0;
     display: flex;
+    
 }
 #grid3{
     display: flex;
 }
+#grid4{
+    overflow: hidden;
+}
 #grid5{
     border-radius: 0 0 0 15px;
+    overflow: hidden;
 }
 #grid5 img{
     border-radius: 0 0 0 15px;
@@ -558,13 +630,13 @@ margin-top: 20px;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #5bc86e;
-    background: #fff;
+    color: #fff;
+    background: #5bc86e;
     transition: background 0.6s;
     
 }
 .btn4:hover{
-    background: #5bc86e;
-    color: #f6f6f6;
+    background: #fff;
+    color: #5bc86e;
     
 }
