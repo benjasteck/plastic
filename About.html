@@ -22,7 +22,9 @@
                     <li><a href="article.html" id="headerAbout">ARTICLES</a> </li>
                     <li><a href="#services" id="headerPortfolio">TAKE ACTION</a> </li>
                     <li><a href="About.html" id="headerProject">ABOUT US</a> </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" id="bars"></i>
             </nav>
             <div class="headerContent">
                 <div class="header-text">
@@ -254,3 +256,14 @@
 
 </body>
 </html>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+    sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+    
+    </script>

@@ -22,7 +22,9 @@
                     <li><a href="article.html" id="headerAbout">ARTICLES</a> </li>
                     <li><a href="#services" id="headerPortfolio">TAKE ACTION</a> </li>
                     <li><a href="About.html" id="headerProject">ABOUT US</a> </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
         <div class="headerContent">
             <div class="header-text">
@@ -129,12 +131,13 @@
 </div>
         <div class="petitionSquare">
             <h2>Know what happens to you and your loved ones <br>when plastic enters your system</h2>
+            <img src="images/66d680b51119937aa2093c54_baby_child_adults.svg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br>et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip <br>ex ea commodo consequat. <br><br>
                 
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id<br> est laborum.</p>
             <a href="" class="btn3">Sign petition</a>
-            <img src="images/66d680b51119937aa2093c54_baby_child_adults.svg" alt="">
+            
         </div>
         
         <div class="greyBoxes">
@@ -227,7 +230,7 @@
         <div class="newsContainer">
             <h2 class="newsTitle">Stay aware of developments</h2>
             <h3 class="newsSubTitle">Subscribe to our newsletter</h3>
-            <a href="" class="btn4">Sign Up</a>
+            <a href="" class="btn4" id="newsBtn">Sign Up</a>
         </div>
         <footer class="footer">
             <div class="footerContainer">
@@ -314,4 +317,16 @@ slides.forEach((slide, index) => {
         }, 5000); // Restart the interval after 5 seconds if no other manual change happens
     });
 });
+
+</script>
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-250px";
+}
+
 </script>
