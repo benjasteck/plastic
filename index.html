@@ -4,6 +4,21 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A concise summary of your webpage to improve SEO and attract visitors.">
+    <meta name="author" content="Benjamin Steckmetz, Anders Jørgensen, Jeppe Westergaard, Michel Skånvad">
+    <meta name="robots" content="index, follow">
+    <!--FACEBOOK-->
+    <meta property="og:title" content="Global Plastic Treaty">
+    <meta property="og:description" content="my name a jeff bezos">
+    <meta property="og:image" content="images/forkPlastic.jpg">
+    <meta property="og:url" content="https://benjasteck.github.io/plastic/index.html">
+    <!--tWITTER-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Global Plastic Treaty">
+    <meta name="twitter:description" content="A brief summary of the page">
+    <meta name="twitter:image" content="https://example.com/image.jpg">
+    
+
     <title>Global Plastic Treaty</title>
     <link rel="stylesheet" href="StyleIndex.css">
     <script src="https://kit.fontawesome.com/6cff64fb2c.js" crossorigin="anonymous"></script>
@@ -94,9 +109,9 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
         <img src="images/circle.png" alt="" class="donut">
-<div class="articleButtons">
+    <div class="articleButtons">
 
     <div class="button" id="button1" aria-label="A plate of multicolored wires arranged to resemble spaghetti, with a fork twirling the vibrant strands in red, blue, yellow, and green, creating a whimsical and surreal appearance">
         <a href="article.html">
@@ -128,8 +143,9 @@
             <p>Do you know the preventive measures towards micro plastics? we dont either, that’s why we need to stop the source!</p>
         </div>
     </div>
-</div>
-        <div class="petitionSquare">
+    </div>
+
+    <div class="petitionSquare">
             <h2>Know what happens to you and your loved ones <br>when plastic enters your system</h2>
             <img src="images/66d680b51119937aa2093c54_baby_child_adults.svg" alt="">
             <p>More and more plastic ends up in our bodies. This happens without us noticing and it can be dangerous. <br>We have to take action now!
@@ -138,9 +154,9 @@
                 Our bodies absorb some of this microplastic that comes from our consumption of plastic. <br>Studies have also shown that women pass this microplastic on to their children when they breastfeed.<br>We have to stop this!</p>
             <a href="" class="btn3">Sign petition</a>
             
-        </div>
+    </div>
         
-        <div class="greyBoxes">
+    <div class="greyBoxes">
             <div class="greyBox">
                 <h2>We need an ambitious and <br>dynamic treaty!</h2>
                 <ul>
@@ -158,8 +174,9 @@
                 </ul>
                 <a href="article.html" class="btn4">See more</a>
             </div>
-        </div>
-        <div class="map-container">
+    </div>
+
+    <div class="map-container">
             <img src="images/Map.png" alt="" class="map" aria-label="A green map of the world">
             <div class="overlay"></div>
             <h2 class="mapTitle">Help the developing countries stop <br>generating plastic</h2>
@@ -171,9 +188,9 @@
             <div class="pin pin5"><i class="fa-solid fa-location-pin"></i></div>
             <div class="pin pin6"><i class="fa-solid fa-location-pin"></i></div>
             <a href="" class="btn5">Sign petition</a>
-        </div>
+    </div>
         <img src="images/circle.png" alt="" class="donut2">
-        <div class="stayInLoop">
+    <div class="stayInLoop">
             <h2 class="loopTitle">Stay In The Loop</h2>
             <div class="loopArticles">
                 <div class="fullBtn">
@@ -225,14 +242,15 @@
                 </div>
             </div>
                 </div>
-        </div>
+    </div>
         
-        <div class="newsContainer">
+    <div class="newsContainer">
             <h2 class="newsTitle">Stay aware of developments</h2>
             <h3 class="newsSubTitle">Subscribe to our newsletter</h3>
             <a href="" class="btn4" id="newsBtn">Sign Up</a>
-        </div>
-        <footer class="footer">
+    </div>
+
+    <footer class="footer">
             <div class="footerContainer">
               <div class="footerLeft">
                   <div class="social-links">
@@ -265,19 +283,17 @@
               </div>
             </div>
               
-          </footer>
+    </footer>
 </body>
 </html>
 <script>
-   let currentSlide = 0;
+let currentSlide = 0;
 let isManualChange = false; // Flag to track manual changes
 let slideInterval; // To store the interval ID
 const slides = document.querySelectorAll('input[name="slider"]');
 
 // Function to change the slide
 function changeSlide() {
-    if (isManualChange) return; // If manual change happened, don't auto change
-
     // Uncheck the current radio button
     slides[currentSlide].checked = false;
 
