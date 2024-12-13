@@ -57,8 +57,6 @@ body{
     margin: 0 auto;
     min-width: var(--minWidth);
     max-width: var(--maxWidth);
-    
-
 }
 nav{
     display: flex;
@@ -738,12 +736,12 @@ a{
     background-color: #939393;
 }
 #loop-button1{
-    background-image: url(images/plasticHeart.PNG);
+    background-image: url(images/plasticHeart.jpg);
     background-size: cover;
     background-position: center;
 }
 #loop-button2{
-    background-image: url(images/globePlastic.PNG);
+    background-image: url(images/globePlastic.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -977,9 +975,7 @@ a{
            font-size: 18px;
            font-weight: bold;
            color: #333332;
-           color: #f6f6f6;
-           
-           
+           color: #f6f6f6;   
         }
         .petitionSquare img{
         position: relative;
