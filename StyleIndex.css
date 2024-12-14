@@ -465,7 +465,7 @@ a{
     height: 70px;
     background-color: #5bc86e;
     border-radius: 100px;
-    margin: 80% auto auto 80%;
+    margin: 310px auto auto calc(100% - 70px);
     text-align: center;
     display: flex;              /* Enable flexbox */
     justify-content: center;    /* Centers horizontally */
@@ -933,6 +933,20 @@ a{
             width: 40%;
         }
     }
+    @media screen and (max-width: 1275px){
+        #button1{
+            background-size: cover;
+            background-position: center;
+        }
+        #button2{
+            background-size: cover;
+            background-position: center;
+        }
+        #button3{
+            background-size: cover;
+            background-position: center;
+        }
+    }
     @media screen and (max-width: 1225px){
         .container{
             padding-left: 10px;
@@ -954,7 +968,7 @@ a{
             margin-bottom: 0px;
         }
         #button2{
-            margin-bottom: 70px;
+            margin-bottom: 95px;
         }
         
         .petitionSquare{
