@@ -37,7 +37,7 @@ body{
     left: -20%;
     margin-top: -25%;
     width: 85%;
-    max-height: 1600px;
+    max-height: 1300px;
 }
 #header{
     width: 100%;
@@ -66,8 +66,8 @@ body{
     margin: 0 auto;
     min-width: var(--minWidth);
     max-width: var(--maxWidth);
-    
-
+    z-index: 3;
+    position: relative;
 }
 nav{
     display: flex;
@@ -696,8 +696,28 @@ nav .fa-solid{
         height: fit-content;
         padding-bottom: 1px;
     }
+    .blackFilter{
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .header-text h1{
+        color: #f6f6f6;
+    }
+    .header-text p{
+        color: #f6f6f6;
+    }
+    .filter{
+        display: none;
+    }
 }
-
+@media screen and (max-width: 768px){
+    .donut{
+        display: none;
+    }
+    .donut2{
+        display: none;
+    }
+}
 @media screen and (max-width: 640px){
     .loopArticles{
         flex-direction: column;

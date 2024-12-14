@@ -564,6 +564,7 @@ a{
 .greyBox h2{
     margin-top: 20px; 
    margin-left: 20px;
+   margin-right: 20px;
    font-size: 36px;
    font-weight: bolder;
 }
@@ -1073,7 +1074,7 @@ a{
             padding: 10px;
         }
         .headerContent{
-            margin-top: 120%;
+            margin-top: calc(100% - 80px);
         }
         .btn{
             margin-top: 20px;
