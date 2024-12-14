@@ -822,7 +822,7 @@ nav .fa-solid{
         padding: 10px;
     }
     .headerContent{
-        margin-top: 120%;
+        margin-top: calc(100% - 20px);
     }
     .btn{
         margin-top: 20px;
