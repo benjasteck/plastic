@@ -519,7 +519,7 @@ a{
 }
 .btn3{
     display: block;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 20px;
     width: fit-content;
     padding: 14px 50px;
@@ -708,6 +708,9 @@ a{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+}
+.loop-buttonText{
+    padding-left: 10px;
 }
 .fullBtn{
    width: 300px;
