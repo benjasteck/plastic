@@ -1083,6 +1083,7 @@ a{
     @media only screen and (max-width: 600px){
         #header{
             max-height: 100vh;
+            background-image: linear-gradient(rgba(29,108,19,0.8),rgba(102,102,102,0.01)), url("images/HeroIndexMobile.jpg");
         }
         .container{
             padding: 10px;
