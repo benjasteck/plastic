@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://benjasteck.github.io/plastic/sitemap.xml
