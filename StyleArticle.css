@@ -417,6 +417,7 @@ figcaption{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .sideText p{
     width: 47.5%;
