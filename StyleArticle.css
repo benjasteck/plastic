@@ -412,7 +412,7 @@ figcaption{
 }
 .sideText{
     width: 100%;
-    height: 200px;
+    height: fit-content;
     color: #333332;
     margin-top: 30px;
     display: flex;
