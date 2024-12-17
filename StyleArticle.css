@@ -419,9 +419,14 @@ figcaption{
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
+.boldtext{
+    font-weight: bold;
+}
+
 .sideText p{
     width: 47.5%;
-    
+    font-weight: normal;
 }
 .grid-container {
     display: grid; /* Activate CSS Grid */
