@@ -424,6 +424,10 @@ figcaption{
     font-weight: bold;
 }
 
+.italictext {
+    font-style: italic;
+}
+
 .sideText p{
     width: 47.5%;
     font-weight: normal;
